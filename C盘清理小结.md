@@ -91,7 +91,7 @@
 
   2. 要移除媒体缓存文件，请单击**移除媒体缓存文件**旁边的**删除**按钮
 
-     ![](C盘清理小结.assets/clear_cache-9.jpeg)
+     ![](https://helpx-prod.scene7.com/is/image/HelpxProdLoc/clear_cache-9?$pjpeg$&jpegSize=300&wid=1600)
 
      参考：[清理Pr缓存](https://helpx.adobe.com/cn/premiere-pro/kb/clear-cache.html)
 
