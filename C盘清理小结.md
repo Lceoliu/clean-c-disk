@@ -86,6 +86,19 @@
 
   清理所有缓存的库。
 
+#### conda
+
+- 介绍：conda会附带tarball, index cache和package cache等缓存文件。
+
+- 清理方法：
+
+  1. 打开命令行，输入
+
+     ```bash
+     conda clean -all -y
+     ```
+      来清理所有conda的缓存文件
+
 #### miniconda
 
 - 介绍：miniconda会默认把新的虚拟环境创建在C盘下，我们可以将其迁移到其他地方
@@ -114,6 +127,45 @@
      可以确认是否修改成功
 
   4. **注意!** 输入conda info后，请保证base environment的路径后有(writable)字样，表示该路径是可写的
+
+#### uv (Python的包管理工具)
+
+- 介绍：同pip一样，uv也会默认缓存安装包到C盘。
+
+- 可能位置：C:\Users\YourUserName\Appdata\Local\uv\cache
+
+- 可能的危险：无
+
+- 清理方法：
+
+  1. 打开命令行，输入
+
+     ```bash
+     uv cache clear
+     ```
+
+     来清理uv的缓存文件
+
+#### NVIDIA着色器缓存
+
+- 介绍：NVIDIA显卡驱动会生成DirectX和OpenGL的着色器缓存文件，以加速游戏的加载时间或GPU程序的加载速度。
+
+- 可能位置：C:\Users\YourUserName\AppData\Local\NVIDIA\DXCache
+  或
+
+  C:\Users\YourUserName\AppData\Local\NVIDIA\GLCache
+
+- 可能的危险：下一次进入游戏或GPU程序时加载时间变长
+
+- 清理方法：
+
+  1. 打开文件资源管理器，导航到上述路径
+
+  2. 删除DXCache和GLCache文件夹中的所有内容（可以直接删除整个文件夹，系统会自动重新生成）
+
+     **注意：** 删除这些缓存文件后，下一次进入游戏或GPU程序时可能会加载时间变长，因为需要重新生成缓存文件。
+
+
 #### Pr
 
 - 介绍：Pr会默认缓存视频图像文件到C盘
