@@ -141,7 +141,7 @@
   1. 打开命令行，输入
 
      ```bash
-     uv cache clear
+     uv cache clean
      ```
 
      来清理uv的缓存文件
